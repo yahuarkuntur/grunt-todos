@@ -108,11 +108,11 @@ module.exports = function(grunt) {
                     log += footer;
                 }
 
-                if(_.isUndefined(f.dest)) {
+                if(_.isUndefined(options.dest)) {
                     grunt.log.write(log);
                 } else {
-                    grunt.file.write(f.dest, grunt.log.uncolor(log));
-                    grunt.log.writeln('File "' + f.dest + '" created.');
+                    grunt.file.write(options.dest, grunt.log.uncolor(log));
+                    grunt.log.writeln('File "' + options.dest + '" created.');
                 }
 
                 if(results.high !== undefined && results.high.length > 0) {
