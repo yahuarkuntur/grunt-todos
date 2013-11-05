@@ -51,6 +51,13 @@ Default value: `true`
 
 Verbose mode will cause the plugin to report on every file, regardless if there are actual lines to report or not. If set to false, only files with todos will be mentioned.
 
+#### options.dest
+Type: `String`
+Default: `undefinded`
+
+Defines the destination path of the output log. If `options.dest` is left undefined the output log will 
+be printed on screen.
+
 ### Usage Examples
 
 #### Default Options
